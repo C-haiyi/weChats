@@ -1,0 +1,52 @@
+<view class="wrap">
+  <view class="info">
+    <view wx:if="{{login}}">
+      <view class="logo">
+        <image src="../../images/logo.jpg"></image>
+      </view>
+      <view class="info_name">胖大海</view>
+      <button class="exit" bindtap="exit">退出</button>
+    </view>
+    <view wx:else class="button">
+      <button bindtap="checklogin">登录</button>
+      <button bindtap="reg">注册</button>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list_menu" bindtap="collect">
+      <view class="menu_logo">
+        <image src="../../images/logo.jpg" style="height:100rpx;width:100rpx"></image>
+      </view>
+      <view class="menu_right">
+        <view>MY COLLECTION</view>
+        <view>无奈文案写不了</view>
+      </view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list_menu">
+      <view class="menu_logo">
+        <image src="../../images/logo.jpg" style="height:100rpx;width:100rpx"></image>
+      </view>
+      <view class="menu_right">
+        <view>MY COLLECTION</view>
+        <view>但是设计做的好</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="list">
+    <view class="list_menu">
+      <view class="menu_logo">
+        <image src="../../images/logo.jpg" style="height:100rpx;width:100rpx"></image>
+      </view>
+      <view class="menu_right">
+        <view>MY COLLECTION</view>
+        <view>无奈文案写不了</view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="exit">
+    <button>退出</button>
+  </view> -->
+</view>

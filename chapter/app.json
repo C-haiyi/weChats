@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/person/index",
+    "pages/game/index",
+    "pages/recommend/index",
+    "pages/login/index",
+    "pages/reg/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_select.png"
+      },
+      {
+        "pagePath": "pages/person/index",
+        "text": "我的",
+        "iconPath": "./images/person.png",
+        "selectedIconPath": "./images/person_select.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#e6e6e5",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

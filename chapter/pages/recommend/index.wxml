@@ -1,0 +1,16 @@
+<view class="list">
+      <view class="box" wx:for="{{collectList}}" wx:for-item="index" wx:key="index">
+        <view class="box_left">
+          <view class="title">
+            {{collectList[index].news.title}}
+          </view>
+          <view class="source">
+            <view>{{collectList[index].news.source}}</view>
+            <view>{{collectList[index].news.time}}</view>
+          </view>
+        </view>
+        <view class="box_right">
+          <image src="{{collectList[index].news.img}}"></image>
+        </view>
+      </view>
+  </view>

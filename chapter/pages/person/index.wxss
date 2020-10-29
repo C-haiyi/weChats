@@ -1,0 +1,98 @@
+/* pages/person/index.wxss */
+.info{
+  height: 400rpx;
+  background-color: red;
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.info>view{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  width: 360rpx;
+  height: 100rpx;
+}
+.button>button{
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24rpx;
+}
+.exit{
+  width: 120rpx;
+  height: 60rpx;
+  appearance: none;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.logo>image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.list{
+  width: 100%;
+  margin-top:50rpx ;
+  height: 180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.list_menu{
+  margin:100rpx auto;
+  width: 600rpx;
+  height: 120rpx;
+  /* border: 1px solid red; */
+  display: flex;
+  box-shadow: 2px 2px #f6e6e5;
+}
+.menu_logo{
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid lightblue; */
+}
+.menu_right{
+  width: 480rpx;
+  height: 120rpx;
+  /* border: 1px solid blanchedalmond; */
+  display: flex;
+}
+.menu_right>view{
+flex: 1;
+}
+.menu_right>view:nth-child(1)::after{
+  content: '我的收藏';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  font-size:40rpx;
+  font-weight: 900;
+}
+.menu_right>view:nth-child(1){
+  font-size: 20rpx;
+  /* position: absolute; */
+}
+.menu_right>view:nth-child(2){
+  display: flex;
+  font: 'FZSuXSLSJW';
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}

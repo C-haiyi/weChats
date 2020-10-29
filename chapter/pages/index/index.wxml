@@ -1,0 +1,27 @@
+<view class="wrap">
+  <view class="menu tt" >
+    <view class="menu_list" wx:for="{{menu}}" wx:key="index">{{item.text}}</view>
+    <button bindtap="search"><image src="../../images/search.png"></image></button>
+  </view>
+  <view class="button">
+    <view class="button_list" wx:for="{{button}}" wx:key="index">{{item.text}}</view>
+  </view>
+  <scroll-view scroll-y="true">
+  <view class="list">
+      <view class="box" bindtap="newsInfo" wx:for="{{newsList}}" wx:key="index" data-id="{{item._id}}">
+        <view class="box_left">
+          <view class="title">
+            {{item.title}}
+          </view>
+          <view class="source">
+            <view>{{item.source}}</view>
+            <view>{{item.time}}</view>
+          </view>
+        </view>
+        <view class="box_right">
+          <image wx:if="{{item.img}}" src="{{item.img}}"></image>
+        </view>
+      </view>
+  </view>
+</scroll-view>
+</view>
